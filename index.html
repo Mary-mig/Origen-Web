@@ -210,7 +210,7 @@ nav.scrolled .nav-cta:hover {
   content:'';
   position:absolute;
   width:2px; height:160%;
-  background:linear-gradient(to bottom, transparent 0%, rgba(204,255,0,.12) 30%, rgba(204,255,0,.18) 55%, transparent 100%);
+  background:linear-gradient(to bottom, transparent 0%, rgba(204,255,0,.12) 30%, rgba(204,255,0,.18) 40%, transparent 100%);
   left:38%; top:-30%;
   transform:rotate(18deg);
 }
@@ -252,7 +252,7 @@ nav.scrolled .nav-cta:hover {
 .hero-label {
   display:inline-flex; align-items:center; gap:10px;
   font-size:16px; font-weight:700; letter-spacing:4px;
-  text-transform:uppercase; color:rgba(255,255,255,.5);
+  text-transform:uppercase; color:#ffffff;
   font-family:'Montserrat',sans-serif; margin-bottom:28px;
 }
 .hero-label-line { width:28px; height:1px; background:var(--l); flex-shrink:0; }
@@ -379,17 +379,18 @@ nav.scrolled .nav-hamburger span { background:var(--ink); }
   }
   .hero-logo-col img { height:150px; }
   .hero-logo-divider { display:none; }
-  .hero-label { justify-content:center; }
+  .hero-label { justify-content:center; font-size:13px; }
   .hero-body, .hero-body-2 { font-size:1rem; }
   .hero-ctas { justify-content:center; }
 }
 
 @media (max-width:480px) {
   .hero { padding:80px 5% 72px; min-height:100svh; }
-  .hero-logo-col img { height:100px; }
+  .hero-logo-col img { height:130px; }
   .hero-body { font-size:.92rem; }
   .hero-body-2 { font-size:.88rem; }
   .hero-ctas { flex-direction:column; align-items:center; width:100%; }
+  .hero-label { font-size:12px; letter-spacing:2px; }
   .btn-neon, .btn-outline { width:100%; justify-content:center; }
 }
 
